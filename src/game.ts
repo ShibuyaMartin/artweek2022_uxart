@@ -34,6 +34,19 @@ uxart_eyes.addComponent(
 engine.addEntity(uxart_eyes)
 uxart_eyes.setParent(parent)
 
+// UXART Eyes_02
+
+export let uxart_eyes_02 = new Entity()
+uxart_eyes_02.addComponent(new GLTFShape('models/uxart_eyes.glb'))
+uxart_eyes_02.addComponent(
+  new Transform({
+    position: new Vector3(24, 0, 24),
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+)
+engine.addEntity(uxart_eyes)
+uxart_eyes_02.setParent(parent)
+
 // UXART McEntyre
 
 export let uxart_mc_entyre = new Entity()
@@ -126,3 +139,15 @@ uxart_kosice_gota.addComponent(
 engine.addEntity(uxart_kosice_gota)
 uxart_kosice_gota.setParent(parent)
 
+// UXART teleporter
+
+export let uxart_teleporter = new Entity()
+uxart_teleporter.addComponent(new GLTFShape('models/uxart_teleporter.glb'))
+uxart_teleporter.addComponent(
+  new Transform({
+    position: new Vector3(24, 0, 24),
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+)
+engine.addEntity(uxart_eyes)
+uxart_teleporter.setParent(parent)
