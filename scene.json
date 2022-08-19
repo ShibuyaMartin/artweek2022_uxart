@@ -1,30 +1,24 @@
 {
   "display": {
-    "title": "DCL Scene",
-    "description": "My new Decentraland project",
+    "title": "UXArt",
+    "description": "",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "",
   "contact": {
-    "name": "author-name",
+    "name": "",
     "email": ""
   },
   "main": "bin/game.js",
   "tags": [],
   "scene": {
     "parcels": [
-      "0,0",
-      "0,1",
-      "0,2",
-      "1,0",
-      "1,1",
-      "1,2",
-      "2,0",
-      "2,1",
-      "2,2"
+      "68,68","69,68","70,68",
+      "68,69","69,69","70,69",
+      "68,70","69,70","70,70"
     ],
-    "base": "0,0"
+    "base": "68,68"
   },
   "spawnPoints": [
     {
@@ -42,6 +36,8 @@
       }
     }
   ],
-  "requiredPermissions": [],
+    "requiredPermissions": [
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE","ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+  ],
   "featureToggles": {}
 }
