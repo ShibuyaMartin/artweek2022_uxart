@@ -211,7 +211,7 @@ uxart_teleporter.setParent(parent)
 
 
 const firstFloorTeleportPos = new Vector3(24,1,19)
-const secondFloorTeleportPos = new Vector3(24,50,16)
+const secondFloorTeleportPos = new Vector3(24,50,20) 
 
 
 const teleportShape = new BoxShape()

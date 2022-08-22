@@ -17,8 +17,8 @@ let teleportCountDown = teleportStartCountDown-1
 
 export function makeTeleport(parent:Entity|undefined,name:string,teleportShape:GLTFShape|Shape|BoxShape,hoverText:string,teleportText:string,transformArgs:TransformConstructorArgs,callback:()=>void){
             const teleportShapeEnt = new Entity("teleporter-"+name)
-            teleportShapeEnt.addComponent(teleportShape)
-            //teleportShapeEnt.addComponent(RESOURCES.materials.transparent)
+            teleportShapeEnt.addComponent(teleportShape) 
+            teleportShapeEnt.addComponent(RESOURCES.materials.transparent)
             const tf = new Transform(transformArgs)
             //tf.position.y -= resourcesDropin.playerHeight - resourcesDropin.floorHeight   
             teleportShapeEnt.addComponent(tf) 
