@@ -196,6 +196,32 @@ uxart_kosice_gota.addComponent(
 engine.addEntity(uxart_kosice_gota)
 uxart_kosice_gota.setParent(parent)
 
+// UXART Alberto Echegaray
+
+export let uxart_alberto = new Entity()
+uxart_alberto.addComponent(new GLTFShape('models/uxart_alberto.glb'))
+uxart_alberto.addComponent(
+  new Transform({
+    position: new Vector3(24, 0, 24),
+    rotation: Quaternion.Euler(0, 0, 0),
+  })
+)
+engine.addEntity(uxart_alberto)
+uxart_alberto.setParent(parent)
+
+// UXART Monolith
+
+export let uxart_monolith = new Entity()
+uxart_monolith.addComponent(new GLTFShape('models/uxart_monolith.glb'))
+uxart_monolith.addComponent(
+  new Transform({
+    position: new Vector3(24, 0, 24),
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+)
+engine.addEntity(uxart_monolith)
+uxart_monolith.setParent(parent)
+
 // UXART teleporter
 
 export let uxart_teleporter = new Entity()
