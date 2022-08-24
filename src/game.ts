@@ -270,7 +270,7 @@ const peices=[
     position: new Vector3(14.757568359375-2, 1.1395968198776245+1, 17.22412109375)  
     ,scale: new Vector3(3,4,3)
   }}//3
-  
+  ,
   //{entity:uxart_monolith, 
     {entity:uxart_alberto,info:CONFIG.peiceInfo[5],collider: { 
       position: new Vector3(35.94287109375+1, 0.6557663679122925+2, 32.263427734375)  
