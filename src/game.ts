@@ -234,8 +234,21 @@ uxart_teleporter.addComponent(
     rotation: Quaternion.Euler(0, 180, 0),
   })
 )
-engine.addEntity(uxart_eyes)
+engine.addEntity(uxart_teleporter)
 uxart_teleporter.setParent(parent)
+
+// UXART IBM
+
+export let uxart_ibm = new Entity()
+uxart_ibm.addComponent(new GLTFShape('models/uxart_IBM.glb'))
+uxart_ibm.addComponent(
+  new Transform({
+    position: new Vector3(24, 0, 24),
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+)
+engine.addEntity(uxart_ibm)
+uxart_ibm.setParent(parent)
 
 /*
 {index:0,id:"MacEntyre",hoverText:"Info",teleportPos:"52,84",title:"Virtual Reconstruction 2020 of ”Totemic Form” 1987.",artist:"Eduardo MacEntyre",technique:"Digital Moire Effect",year:"",concept:"Mac Entyre's work in 1959 created a genre they themselves described as Generative art, a movement later expanded on by world-renowned computer artists like Benoît Mandelbrot.\n\nSketched until relatively recently by hand following a series of random algorithms, Mac Entyre's work is reminiscent of Leonardo Fibonacci's 13th-century nautilus designs – though Mac Entyre's are more complex owing to their randomness, as each work forms a helix alike in no two sketches. Mac Entyre created a body of more traditional Abstract, Cubist and Figurative art. He was honored by the Organization of American States in 1986 for his contribution to Modern Art in Latin America",broughtBy:"UXART",teaserText:""},
