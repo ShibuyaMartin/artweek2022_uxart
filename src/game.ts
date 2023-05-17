@@ -42,7 +42,7 @@ uxart_base.addComponent(new GLTFShape('models/uxart_base.glb'))
 uxart_base.addComponent(
   new Transform({
     position: new Vector3(24, 0, 24),
-    rotation: Quaternion.Euler(0, 0, 0),
+    rotation: Quaternion.Euler(0, 180, 0),
   })
 )
 engine.addEntity(uxart_base)
@@ -210,19 +210,6 @@ uxart_alberto.addComponent(
 )
 engine.addEntity(uxart_alberto)
 uxart_alberto.setParent(parent)
-
-// UXART Monolith
-
-export let uxart_monolith = new Entity()
-uxart_monolith.addComponent(new GLTFShape('models/uxart_monolith.glb'))
-uxart_monolith.addComponent(
-  new Transform({
-    position: new Vector3(24, 0, 24),
-    rotation: Quaternion.Euler(0, 180, 0),
-  })
-)
-engine.addEntity(uxart_monolith)
-uxart_monolith.setParent(parent)
 
 // UXART teleporter
 
