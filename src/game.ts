@@ -317,7 +317,10 @@ for(let x=0; x < peices.length; x++){
         rotation: Quaternion.Euler(0, 0, 0),
       }) 
     )
-    collider.addComponent(RESOURCES.materials.transparent)
+    //collider.addComponent(RESOURCES.materials.transparent)
+    collider.addComponent(new Material())
+    collider.getComponent(Material).albedoColor = new Color4(0.5, 0, 0.5, 0)
+
     collider.addComponent(onPointer) 
     engine.addEntity(collider)
     //collider.setParent(parent)
