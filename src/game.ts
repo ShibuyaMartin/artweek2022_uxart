@@ -3,6 +3,7 @@
 
 import { CONFIG } from "./config"
 import { ROOT_SCENE_VISIBILITY_STRATEGY, SCENE_MGR } from "./globals"
+import { videoIBM } from "./IBMvideos"
 import { BaseEntityWrapper, SubScene } from "./modules/sceneMgmt/subScene"
 import { SceneVector3Type, SpawnPoint } from "./modules/sceneMgmt/types"
 import { RESOURCES } from "./resources"
@@ -286,6 +287,52 @@ const peices=[
       position: new Vector3(34.7171630859375-1, 0.15656159818172455+5, 16.4766845703125)  
       ,scale: new Vector3(3,4,3)
     }} //7 continuous space*/
+
+    //ADDITIONAL IBM VIDEOS (OUTSIDE BUILDING)
+    ,
+    {
+        entity: videoIBM[0].videoScreen, info: CONFIG.peiceInfo[10], collider: {
+            position: new Vector3(
+                -1 * videoIBM[0].videoScreen.getComponent(Transform).position.x,
+                videoIBM[0].videoScreen.getComponent(Transform).position.y,
+                -1 * videoIBM[0].videoScreen.getComponent(Transform).position.z,
+            ).add(new Vector3(24, 0, 24))
+            , scale: new Vector3(0.5, 4.5, 8.5)
+        }
+    }
+    ,
+    {
+        entity: videoIBM[1].videoScreen, info: CONFIG.peiceInfo[11], collider: {
+            position: new Vector3(
+                -1 * videoIBM[1].videoScreen.getComponent(Transform).position.x,
+                videoIBM[1].videoScreen.getComponent(Transform).position.y,
+                -1 * videoIBM[1].videoScreen.getComponent(Transform).position.z,
+            ).add(new Vector3(24, 0, 24))
+            , scale: new Vector3(0.5, 4.5, 8.5)
+        }
+    }
+    ,
+    {
+        entity: videoIBM[2].videoScreen, info: CONFIG.peiceInfo[8], collider: {
+            position: new Vector3(
+                -1 * videoIBM[2].videoScreen.getComponent(Transform).position.x,
+                videoIBM[2].videoScreen.getComponent(Transform).position.y,
+                -1 * videoIBM[2].videoScreen.getComponent(Transform).position.z,
+            ).add(new Vector3(24, 0, 24))
+            , scale: new Vector3(0.5, 4.5, 8.5)
+        }
+    }
+    ,
+    {
+        entity: videoIBM[3].videoScreen, info: CONFIG.peiceInfo[9], collider: {
+            position: new Vector3(
+                -1 * videoIBM[3].videoScreen.getComponent(Transform).position.x,
+                videoIBM[3].videoScreen.getComponent(Transform).position.y,
+                -1 * videoIBM[3].videoScreen.getComponent(Transform).position.z,
+            ).add(new Vector3(24, 0, 24))
+            , scale: new Vector3(0.5, 4.5, 8.5)
+        }
+    }
 ]
 
 const infoModal = new PieceInfoModal()

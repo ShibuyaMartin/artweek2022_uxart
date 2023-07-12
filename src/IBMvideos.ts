@@ -49,6 +49,8 @@ let videoIBMData = [
     },
 ]
 
+export const videoIBM: VideoScreen[] = []
+
 for (let i = 0; i < videoIBMData.length; i++) {
     const videoFrame = new VideoScreen(
         videoIBMData[i].thumbnail,
@@ -56,4 +58,5 @@ for (let i = 0; i < videoIBMData.length; i++) {
         videoIBMData[i].transform,
         videoIBMData[i].trigger
     )
+    videoIBM.push(videoFrame)
 }

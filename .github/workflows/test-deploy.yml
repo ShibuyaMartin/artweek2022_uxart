@@ -1,0 +1,28 @@
+name: Deploy to DCL Worlds Test
+
+on:
+  push:
+    branches:
+      - testnet
+
+env:
+  DCL_PRIVATE_KEY: ${{ secrets.DCL_PRIVATE_KEY_PROD }}
+
+jobs:
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install decentraland
+      run: npm i -g decentraland@latest
+    - name: Install npm packages
+      run: |
+        npm install
+    - name: Build scene
+      run: |
+        npm run build
+    - name: Deploy scene
+      run: |
+        dcl deploy ‑‑target‑content https://worlds‑server.atlascorp.io/content
